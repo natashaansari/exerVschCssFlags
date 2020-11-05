@@ -1,0 +1,50 @@
+/*
+  .madagascar {
+    --ratio: 2/3;
+    --c0: #FFFFFF;
+    --c1: #FC3E32;
+    --c2: #007E39;
+  }
+  */
+  * {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+* {
+    padding: 0px; 
+    margin: 0px
+}
+.container {
+  display: grid;
+  height: 300px;
+  width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "one two three"
+  "four five six"
+}
+.r1c1{
+  background-color: #Ffffff;
+  grid-area: one;
+}
+.r1c2{
+  background-color: #FC3E32;
+  grid-area: two;
+}
+.r1c3{
+  background-color: #FC3E32;
+  grid-area: three;
+}
+.r2c1{
+  background-color: #ffffff;
+  grid-area: four;
+}
+.r2c2{
+  background-color: #007E39;
+  grid-area: five;
+}
+.r2c3{
+  background-color: #007E39;
+  grid-area: six;
+}

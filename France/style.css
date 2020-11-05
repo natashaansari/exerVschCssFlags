@@ -1,0 +1,64 @@
+/*
+  .france {
+    --ratio: 2/3;
+    --div: 90deg;
+    --c0: #002495;
+    --c1: #FFFFFF;
+    --c2: #ED2938;
+  }
+  */
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+* {
+    padding: 0px; 
+    margin: 0px
+}
+.container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one two three"
+  "four five six"
+  "seven eight nine"
+}
+.r1c1{
+  background-color: #002495;
+  grid-area: one;
+}
+.r1c2{
+  background-color: #ffffff;
+  grid-area: two;
+}
+.r1c3{
+  background-color: #ED2938;
+  grid-area: three;
+}
+.r2c1{
+  background-color: #002495;
+  grid-area: four;
+}
+.r2c2{
+  background-color: #ffffff;
+  grid-area: five;
+}
+.r2c3{
+  background-color: #ED2938;
+  grid-area: six;
+}
+.r3c1{
+  background-color: #002495;
+  grid-area: seven;
+}
+.r3c2{
+  background-color: #ffffff;
+  grid-area: eight;
+}
+.r3c3{
+  background-color: #ED2938;
+  grid-area: nine;
+}

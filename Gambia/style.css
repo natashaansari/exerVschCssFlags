@@ -1,0 +1,42 @@
+/*
+  .gambia {
+    --ratio: 2/3;
+    --c0: #CE1127;
+    --c1: #FFFFFF;
+    --c2: #0D1D8B;
+    --c3: #3B7827;
+  }
+  */
+  * {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+* {
+    padding: 0px; 
+    margin: 0px
+}
+.container {
+  display: grid;
+  height: 300px;
+  width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one one one"
+  "two two two"
+  "three three three"
+}
+.r1c1{
+  background-color: #CE1127;
+  grid-area: one;
+}
+.r1c2{
+  background-color: #0D1D8B;
+  grid-area: two;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+}
+.r1c3{
+  background-color: #3B7827;
+  grid-area: three;
+}

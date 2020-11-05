@@ -1,0 +1,39 @@
+/*
+  .germany {
+    --ratio: 3/5;
+    --c0: #000000;
+    --c1: #DE0002;
+    --c2: #FFCE00;
+  }
+  */
+  * {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+* {
+    padding: 0px; 
+    margin: 0px
+}
+.container {
+  display: grid;
+  height: 300px;
+  width: 400px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one one one one one"
+  "two two two two two"
+  "three three three three three"
+}
+.r1c1{
+  background-color: #000000;
+  grid-area: one;
+}
+.r1c2{
+  background-color: #DE0002;
+  grid-area: two;
+}
+.r1c3{
+  background-color: #FFCE00;
+  grid-area: three;
+}

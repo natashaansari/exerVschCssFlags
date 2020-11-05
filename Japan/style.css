@@ -1,0 +1,65 @@
+/*
+  .japan {
+    --ratio: 2/3;
+    --c0: #ffffff;
+    --c1: #BC022C;
+  }
+  */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: inline-grid;
+    border: 10px solid lightblue;
+    grid-template-columns: 173px 234px 173px;
+    grid-template-rows: 77px 234px 77px;
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine"
+}
+.r1c1{
+  background-color: #ffffff;
+  grid-area: one;
+}
+.r1c2{
+  background-color: #ffffff;
+  grid-area: two;
+}
+.r1c3{
+  background-color: #ffffff;
+  grid-area: three;
+}
+.r2c1{
+  background-color: #ffffff;
+  grid-area: four;
+}
+.r2c2{
+  background-color: #ffffff;
+  grid-area: five;
+}
+.r2c3{
+  background-color: #ffffff;
+  grid-area: six;
+}
+.r3c1{
+  background-color: #ffffff;
+  grid-area: seven;
+}
+.r3c2{
+  background-color: #ffffff;
+  grid-area: eight;
+}
+.r3c3{
+  background-color: #ffffff;
+  grid-area: nine;
+}
+.circle{
+    background-color: #BC0223;
+    height: 234px;
+    width: 234px;
+    border-radius: 50%;
+    display: inline-block;
+}
